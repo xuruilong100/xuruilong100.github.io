@@ -1,6 +1,6 @@
 # The Site Configuration
 
-markdown: GFM
+markdown: kramdown
 
 # Import the theme
 theme: jekyll-theme-chirpy
