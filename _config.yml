@@ -1,6 +1,6 @@
 # The Site Configuration
 
-markdown: commonmark
+markdown: GFM
 
 # Import the theme
 theme: jekyll-theme-chirpy
