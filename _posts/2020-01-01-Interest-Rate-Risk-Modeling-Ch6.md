@@ -45,16 +45,16 @@ f(s,s+t)t = \int_{s}^{s+t}f(x)dx\\
 \Delta f(s,s+t)t = \int_{s}^{s+t}\Delta f(x)dx
 $$
 
-（连续复利）期货利率 $f^*$ 和远期利率 $f$ 之间存在“凸性修正”关系：
+（连续复利）期货利率 $f^{\ast}$ 和远期利率 $f$ 之间存在“凸性修正”关系：
 
 $$
-f(s,s+t) = f^*(s,s+t) - \frac{1}{2} \sigma^2 s(s+t)
+f(s,s+t) = f^{\ast}(s,s+t) - \frac{1}{2} \sigma^2 s(s+t)
 $$
 
 所以
 
 $$
-\Delta f(s,s+t) = \Delta f^*(s,s+t)
+\Delta f(s,s+t) = \Delta f^{\ast}(s,s+t)
 $$
 
 已知：
@@ -70,7 +70,7 @@ $$
 \Delta CP = -2500 \times \Delta q
 $$
 
-如果（连续复利）期货利率由 $f^*(s,s+90/365)$ 变为 $f^{* \prime}(s,s+90/365)$（记 $\Delta f^{*} = f^{* \prime} - f^{*}$），那么
+如果（连续复利）期货利率由 $f^{\ast}(s,s+90/365)$ 变为 $f^{* \prime}(s,s+90/365)$（记 $\Delta f^{*} = f^{* \prime} - f^{*}$），那么
 
 $$
 \begin{aligned}

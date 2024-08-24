@@ -27,7 +27,7 @@ description: 《Interest Rate Risk Modeling》第十章知识思维导图
 
 $$
 \begin{aligned}
-PCD(i) &= -\frac{1}{P} \frac{\partial P}{\partial c^*_i}\\&= -\sqrt{\lambda_i} \frac{1}{P} \frac{\partial P}{\partial c_i}\\
+PCD(i) &= -\frac{1}{P} \frac{\partial P}{\partial c^{\ast}_i}\\&= -\sqrt{\lambda_i} \frac{1}{P} \frac{\partial P}{\partial c_i}\\
 &=-\sqrt{\lambda_i} \frac{1}{P} \frac{\partial P}{\partial c_i} \sum_{j=1}^k \mu_{ij}^2\\
 &=-\sqrt{\lambda_i} \frac{1}{P} \sum_{j=1}^k \frac{\partial P}{\partial c_i} \mu_{ij}^2\\
 &=-\sqrt{\lambda_i} \frac{1}{P} \sum_{j=1}^k \frac{\partial P}{\partial c_i} \frac{\partial c_i}{\partial y(t_j)} \mu_{ij}\\
@@ -41,7 +41,7 @@ $$
 
 $$
 \begin{aligned}
-PCC(i,j) &=  -\frac{1}{P} \frac{\partial^2 P}{\partial c^*_i \partial c^*_j}\\
+PCC(i,j) &=  -\frac{1}{P} \frac{\partial^2 P}{\partial c^{\ast}_i \partial c^{\ast}_j}\\
 &=-\sqrt{\lambda_i}\sqrt{\lambda_j}\frac{1}{P} \frac{\partial^2 P}{\partial c_i \partial c_j}\\
 \end{aligned}
 $$
