@@ -2,7 +2,7 @@
 title: 拟合期限结构
 date: 2019-12-08 #YYYY-MM-DD HH:MM:SS +/-TTTT
 categories: []
-tags: [读书笔记, 利率风险, 固收] # TAG names should always be lowercase
+tags: [读书笔记, 利率风险, 固收]
 description: 《Interest Rate Risk Modeling》第三章知识思维导图
 ---
 

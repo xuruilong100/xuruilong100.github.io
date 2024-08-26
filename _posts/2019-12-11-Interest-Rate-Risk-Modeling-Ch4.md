@@ -2,7 +2,7 @@
 title: M-absolute 和 M-square 风险度量
 date: 2019-12-11 #YYYY-MM-DD HH:MM:SS +/-TTTT
 categories: []
-tags: [读书笔记, 利率风险, 固收] # TAG names should always be lowercase
+tags: [读书笔记, 利率风险, 固收]
 description: 《Interest Rate Risk Modeling》第四章知识思维导图
 ---
 

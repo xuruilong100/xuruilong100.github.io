@@ -2,7 +2,7 @@
 title: 主成分模型与 VaR 分析
 date: 2020-02-02 #YYYY-MM-DD HH:MM:SS +/-TTTT
 categories: []
-tags: [读书笔记, 利率风险, 固收] # TAG names should always be lowercase
+tags: [读书笔记, 利率风险, 固收]
 description: 《Interest Rate Risk Modeling》第十章知识思维导图
 ---
 

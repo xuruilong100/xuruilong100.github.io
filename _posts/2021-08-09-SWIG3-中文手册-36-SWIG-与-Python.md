@@ -2,7 +2,7 @@
 title: SWIG3 中文手册——36 SWIG 与 Python
 date: 2021-08-09 #YYYY-MM-DD HH:MM:SS +/-TTTT
 categories: []
-tags: [SWIG3 中文手册] # TAG names should always be lowercase
+tags: [SWIG3 中文手册]
 description: SWIG3 文档第 36 部分中文翻译
 ---
 

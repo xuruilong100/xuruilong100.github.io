@@ -2,7 +2,7 @@
 title: 使用 SWIG 时遇到 Assertion Failed 的原因与解决方法
 date: 2022-03-06 #YYYY-MM-DD HH:MM:SS +/-TTTT
 categories: []
-tags: [FRM] # TAG names should always be lowercase
+tags: [SWIG]
 description: 发现并解决 32-bit 版本 SWIG 特有的一个问题。
 ---
 
