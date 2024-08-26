@@ -70,7 +70,7 @@ $$
 \Delta CP = -2500 \times \Delta q
 $$
 
-如果（连续复利）期货利率由 $f^{\ast}(s,s+90/365)$ 变为 $f^{* \prime}(s,s+90/365)$（记 $\Delta f^{*} = f^{* \prime} - f^{*}$），那么
+如果（连续复利）期货利率由 $f^{\ast}(s,s+90/365)$ 变为 $f^{\ast \prime}(s,s+90/365)$（记 $\Delta f^\ast = f^{\ast \prime} - f^\ast$），那么
 
 $$
 \begin{aligned}
