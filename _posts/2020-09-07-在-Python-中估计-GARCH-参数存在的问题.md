@@ -11,9 +11,9 @@ description: 本文承接前面的几篇博客，对 Python 中专门用于波�
 ## 概述
 
 前文链接：
-* [《在 R 中估计 GARCH 参数存在的问题》](https://www.cnblogs.com/xuruilong100/p/9986088.html)
-* [《在 R 中估计 GARCH 参数存在的问题（续）》](https://www.cnblogs.com/xuruilong100/p/10087995.html)
-* [《在 R 中估计 GARCH 参数存在的问题（基于 rugarch 包）》](https://www.cnblogs.com/xuruilong100/p/10404054.html)
+* [《在 R 中估计 GARCH 参数存在的问题》](https://xuruilong100.github.io/posts/%E5%9C%A8-R-%E4%B8%AD%E4%BC%B0%E8%AE%A1-GARCH-%E5%8F%82%E6%95%B0%E5%AD%98%E5%9C%A8%E7%9A%84%E9%97%AE%E9%A2%98-1/)
+* [《在 R 中估计 GARCH 参数存在的问题（续）》](https://xuruilong100.github.io/posts/%E5%9C%A8-R-%E4%B8%AD%E4%BC%B0%E8%AE%A1-GARCH-%E5%8F%82%E6%95%B0%E5%AD%98%E5%9C%A8%E7%9A%84%E9%97%AE%E9%A2%98-2/)
+* [《在 R 中估计 GARCH 参数存在的问题（基于 rugarch 包）》](https://xuruilong100.github.io/posts/%E5%9C%A8-R-%E4%B8%AD%E4%BC%B0%E8%AE%A1-GARCH-%E5%8F%82%E6%95%B0%E5%AD%98%E5%9C%A8%E7%9A%84%E9%97%AE%E9%A2%98-3/)
 
 [arch](https://github.com/bashtage/arch) 包由来自牛津大学的 [Kevin Sheppard](https://www.kevinsheppard.com/) 教授设计开发，可以用于模拟、估计和预测 ARCH、GARCH、TARCH、EGARCH、RiskMetrics 等常见的波动率模型。目前的版本（4.15）只限于单变量波动率模型。
 
@@ -415,7 +415,7 @@ def starting_values(self, resids: NDArray) -> NDArray:
 
 无论是 arch 还是 rugarch，参数估计都是基于极大似然法，并且高度依赖数值最优化算法的选择和微调。因此，可以推测估计结果偶然出现极端值的现象可能是该框架的通病，如果要突破这一问题的话可能需要改变参数估计的方法论，例如，
 * 使用贝叶斯方法——[bayesGARCH 包](https://mran.microsoft.com/package/bayesGARCH)
-* 使用机器学习算法——[《矩估计遇到神经网络》](https://www.cnblogs.com/xuruilong100/p/10159525.html)
+* 使用机器学习算法——[《矩估计遇到神经网络》](https://xuruilong100.github.io/posts/%E7%9F%A9%E4%BC%B0%E8%AE%A1%E9%81%87%E5%88%B0%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/)
 * 使用交叉验证的技巧
 
 无论用那种软件和算法做参数估计，都建议提前进行纵向和横向的测试，一方面大致了解稳定估计的样本量下限是多少，另一方面大致了解估计参数的真实分布情况，用来帮助自己分析一下到底是模型不合适，还是自己运气不好。
