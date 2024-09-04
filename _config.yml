@@ -105,7 +105,7 @@ avatar: /img/about-me.jpg
 social_preview_image: # string, local or CORS resources
 
 # boolean type, the global switch for TOC in posts.
-toc: false
+toc: true
 
 comments:
   # Global switch for the post comment system. Keeping it empty means disabled.
@@ -179,7 +179,7 @@ defaults:
     values:
       layout: post
       comments: true # Enable comments in posts.
-      toc: false # Display TOC column in posts.
+      toc: true # Display TOC column in posts.
       math: true
       # DO NOT modify the following parameter unless you are confident enough
       # to update the code of all other post links in this project.
