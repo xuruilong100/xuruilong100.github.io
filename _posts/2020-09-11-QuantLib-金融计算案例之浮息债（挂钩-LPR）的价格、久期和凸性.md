@@ -313,7 +313,7 @@ bond.setPricingEngine(engine)
 
 有三点注意事项：
 * 推算票息和贴现因子的期限结构使用了各自的 day counter，原因出在 `IborIndex` 上，它和前面的 `Schedule` 在有关时间的计算上可能产生不一致（不算严重的 bug，算是个 flaw），具体的原因请阅读以下两个链接的内容（[链接 1](https://github.com/lballabio/QuantLib-SWIG/issues/305)、[链接 2](https://quant.stackexchange.com/questions/12707/pricing-a-fixedratebond-in-quantlib-yield-vs-termstructure)）
-* 由于是对存续债券估值，需要为期限结构添加“历史浮动利率”——历史上 fixing date 上的 LPR1Y 数据。尽管只有最近一次 fixing 的 LPR1Y 利率会参与估值，但用户还是要添加更早期 fixing date 的利率，否则会报错，幸运的是更早期的历史利率不参与估值，可以随便用个数来填充。（[《案例之普通利率互换分析（1）》](https://www.cnblogs.com/xuruilong100/p/12546294.html)也出现了这个情况，可以作为参考阅读）
+* 由于是对存续债券估值，需要为期限结构添加“历史浮动利率”——历史上 fixing date 上的 LPR1Y 数据。尽管只有最近一次 fixing 的 LPR1Y 利率会参与估值，但用户还是要添加更早期 fixing date 的利率，否则会报错，幸运的是更早期的历史利率不参与估值，可以随便用个数来填充。（[《案例之普通利率互换分析（1）》](https://xuruilong100.github.io/posts/QuantLib-%E9%87%91%E8%9E%8D%E8%AE%A1%E7%AE%97%E6%A1%88%E4%BE%8B%E4%B9%8B%E6%99%AE%E9%80%9A%E5%88%A9%E7%8E%87%E4%BA%92%E6%8D%A2%E5%88%86%E6%9E%90-1/)也出现了这个情况，可以作为参考阅读）
 * 计算贴现因子用到了 `ZeroSpreadedTermStructure`，这里的利差就是点差利率 $y$。
 
 打印出债券的现金流。
