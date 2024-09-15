@@ -1,12 +1,12 @@
 ---
-title: 基于 LIBOR 模型用互换和利率期权进行对冲
+title: 《Interest Rate Risk Modeling》第八章：基于 LIBOR 模型用互换和利率期权进行对冲
 date: 2020-01-29 #YYYY-MM-DD HH:MM:SS +/-TTTT
 categories: []
 tags: [读书笔记, 利率风险, 固收]
 description: 《Interest Rate Risk Modeling》第八章知识思维导图
 ---
 
-# 《Interest Rate Risk Modeling》第八章：基于 LIBOR 模型用互换和利率期权进行对冲
+# 基于 LIBOR 模型用互换和利率期权进行对冲
 
 ![](/img/irrm/cover.jpg)
 

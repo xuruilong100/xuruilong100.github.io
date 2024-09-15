@@ -1,12 +1,12 @@
 ---
-title: 关键利率久期和 VaR 分析
+title: 《Interest Rate Risk Modeling》第九章：关键利率久期和 VaR 分析
 date: 2020-01-30 #YYYY-MM-DD HH:MM:SS +/-TTTT
 categories: []
 tags: [读书笔记, 利率风险, 固收]
 description: 《Interest Rate Risk Modeling》第九章知识思维导图
 ---
 
-# 《Interest Rate Risk Modeling》第九章：关键利率久期和 VaR 分析
+# 关键利率久期和 VaR 分析
 
 ![](/img/irrm/cover.jpg)
 

@@ -1,12 +1,12 @@
 ---
-title: M-absolute 和 M-square 风险度量
+title: 《Interest Rate Risk Modeling》第四章：M-absolute 和 M-square 风险度量
 date: 2019-12-11 #YYYY-MM-DD HH:MM:SS +/-TTTT
 categories: []
 tags: [读书笔记, 利率风险, 固收]
 description: 《Interest Rate Risk Modeling》第四章知识思维导图
 ---
 
-# 《Interest Rate Risk Modeling》第四章：M-absolute 和 M-square 风险度量
+# M-absolute 和 M-square 风险度量
 
 ![](/img/irrm/cover.jpg)
 

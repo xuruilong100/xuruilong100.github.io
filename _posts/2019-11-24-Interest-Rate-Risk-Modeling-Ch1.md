@@ -1,12 +1,12 @@
 ---
-title: 利率风险建模概览
+title: 《Interest Rate Risk Modeling》第一章：利率风险建模概览
 date: 2019-11-24 #YYYY-MM-DD HH:MM:SS +/-TTTT
 categories: []
 tags: [读书笔记, 利率风险, 固收]
 description: 《Interest Rate Risk Modeling》第一章知识思维导图
 ---
 
-# 《Interest Rate Risk Modeling》第一章：利率风险建模概览
+# 利率风险建模概览
 
 ![](/img/irrm/cover.jpg)
 

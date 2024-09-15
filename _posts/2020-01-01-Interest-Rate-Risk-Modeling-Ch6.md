@@ -1,12 +1,12 @@
 ---
-title: 用利率期货对冲
+title: 《Interest Rate Risk Modeling》第六章：用利率期货对冲
 date: 2020-01-01 #YYYY-MM-DD HH:MM:SS +/-TTTT
 categories: []
 tags: [读书笔记, 利率风险, 固收]
 description: 《Interest Rate Risk Modeling》第六章知识思维导图
 ---
 
-# 《Interest Rate Risk Modeling》第六章：用利率期货对冲
+# 用利率期货对冲
 
 ![](/img/irrm/cover.jpg)
 

@@ -1,12 +1,12 @@
 ---
-title: 用债券期权对冲
+title: 《Interest Rate Risk Modeling》第七章：用债券期权对冲
 date: 2020-01-12 #YYYY-MM-DD HH:MM:SS +/-TTTT
 categories: []
 tags: [读书笔记, 利率风险, 固收]
 description: 《Interest Rate Risk Modeling》第七章知识思维导图
 ---
 
-# 《Interest Rate Risk Modeling》第七章：用债券期权对冲
+# 用债券期权对冲
 
 ![](/img/irrm/cover.jpg)
 

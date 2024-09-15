@@ -1,12 +1,12 @@
 ---
-title: 信用债的久期模型
+title: 《Interest Rate Risk Modeling》第十一章：信用债的久期模型
 date: 2020-02-05 #YYYY-MM-DD HH:MM:SS +/-TTTT
 categories: []
 tags: [读书笔记, 利率风险, 固收]
 description: 《Interest Rate Risk Modeling》第十一章知识思维导图
 ---
 
-# 《Interest Rate Risk Modeling》第十一章：信用债的久期模型
+# 信用债的久期模型
 
 ![](/img/irrm/cover.jpg)
 
