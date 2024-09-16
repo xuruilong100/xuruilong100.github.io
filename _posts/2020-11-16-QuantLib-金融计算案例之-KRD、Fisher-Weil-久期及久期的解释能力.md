@@ -134,7 +134,7 @@ spotCurve = ql.YieldTermStructureHandle(
         compounding))
 ```
 
-> 关于 `scheduleEx`，请看[这里](https://www.cnblogs.com/xuruilong100/p/13982875.html)。
+> 关于 `scheduleEx`，请看[这里](https://xuruilong100.github.io/posts/QuantLib-%E9%87%91%E8%9E%8D%E8%AE%A1%E7%AE%97%E4%B8%80%E4%B8%AA%E4%BD%BF%E7%94%A8-ActualActual-%E6%97%B6%E9%9C%80%E8%A6%81%E6%B3%A8%E6%84%8F%E7%9A%84%E9%99%B7%E9%98%B1/)。
 
 `spotRates` 里面是 2020-11-10 这天的即期利率（根据上清所的数据转换成连续复利），用于构造即期期限结构。`spotRates` 中的第一个元素通常用于为插值计算提供边界点，表示今天的利率值。这里采用 `LogLinear` 插值，所以可以用 `1.0`，若用 `Linear` 插值，也可以用 `0.0`。`tenors` 中的第一个元素通常用于为期限结构提供**基准日期**，一般来说就是估值日期当天。由于后面提供了隔夜利率，`spotRates[0]` 这个数其实不参与计算，但必须有，以便和 `tenors` 对齐。
 

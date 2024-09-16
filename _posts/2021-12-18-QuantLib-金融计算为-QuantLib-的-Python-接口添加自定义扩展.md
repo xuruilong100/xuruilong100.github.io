@@ -21,7 +21,7 @@ description: 以 FR007 互换为例，演示如何为 QuantLib 的 Python 接口
 
 作为测试，将 [QuantLibEx](https://github.com/xuruilong100/QuantLibEx) 中的例子 `ChinaFixingRepoSwapCurve` 翻译成 python 代码。
 
-> 扩展阅读：[《C++ 代码改写成 Python 程序的一些经验》](https://www.cnblogs.com/xuruilong100/p/13281006.html)
+> 扩展阅读：[《C++ 代码改写成 Python 程序的一些经验》](https://xuruilong100.github.io/posts/QuantLib-%E9%87%91%E8%9E%8D%E8%AE%A1%E7%AE%97-Cpp-to-Python/)
 
 ```python
 import QuantLib as ql

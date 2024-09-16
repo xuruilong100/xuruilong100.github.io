@@ -94,7 +94,7 @@ QuantLib 提供 10 种方向数配置，分别是：
 ## 扩展阅读
 
 * 几种方向数配置之间其他方面的比较请查看文献【2】
-* [《Sobol 序列并行化的实践经验》](https://www.cnblogs.com/xuruilong100/p/15463456.html)
+* [《Sobol 序列并行化的实践经验》](https://xuruilong100.github.io/posts/Sobol-%E5%BA%8F%E5%88%97%E5%B9%B6%E8%A1%8C%E5%8C%96%E7%9A%84%E5%AE%9E%E8%B7%B5%E7%BB%8F%E9%AA%8C/)
 
 ## 参考文献
 

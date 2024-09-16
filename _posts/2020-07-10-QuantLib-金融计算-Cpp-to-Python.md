@@ -254,7 +254,7 @@ underlyingH = ql.QuoteHandle(ql.SimpleQuote(underlying))
 
 `Quote` 类和 `Handle` 模板是 QuantLib 中最常用到的两个类（模板），它们通常充当“观察者模式”中被观察的一方，一般被当做参数来配置更复杂类的实例。`Quote` 类接受一个浮点数做参数，而 `Handle` 模板接受一个智能指针。当用户修改 `Quote` 实例的值，或 `Handle` 实例指向的指针之后，那些接受过这些实例的复杂类对象会接到通知，并自动触发相关计算。这个机制非常赞！
 
-关于 `Quote` 的具体使用案例，详情可以参考[《`Quote` 带来的便利》](https://www.cnblogs.com/xuruilong100/p/11184791.html#quote-带来的便利)。
+关于 `Quote` 的具体使用案例，详情可以参考[《`Quote` 带来的便利》](https://xuruilong100.github.io/posts/QuantLib-%E9%87%91%E8%9E%8D%E8%AE%A1%E7%AE%97%E6%A1%88%E4%BE%8B%E4%B9%8B%E6%99%AE%E9%80%9A%E6%AC%A7%E5%BC%8F%E6%9C%9F%E6%9D%83%E5%88%86%E6%9E%90/#quote-%E5%B8%A6%E6%9D%A5%E7%9A%84%E4%BE%BF%E5%88%A9)。
 
 QuantLib 的 Python 接口已经包装了 `Handle` 模板的一些实例化，例如 `QuoteHandle` 和下面将要看到的 `YieldTermStructureHandle`，这些类有一致的命名格式——`ClassHandle`。
 
@@ -865,6 +865,6 @@ Volatility = 20.000000%
 * 经验 9：名为 `MakeClass` 的工厂类将制造出一个 `Class` 对象，后续的成员函数表示配置的参数。
 
 需要注意的是，QuantLib 中并非所有的功能都有对应的 Python 接口，如果用户需要的功能未被包装，用户只好修改 SWIG 代码，自行生成 Python 接口，可以参考一下文章：
-* [《自己动手封装 Python 接口（1）》](https://www.cnblogs.com/xuruilong100/p/12051908.html)
-* [《自己动手封装 Python 接口（2）》](https://www.cnblogs.com/xuruilong100/p/12350548.html)
-* [《自己动手封装 Python 接口（3）》](https://www.cnblogs.com/xuruilong100/p/12491372.html)
+* [《自己动手封装 Python 接口（1）》](https://xuruilong100.github.io/posts/QuantLib-%E9%87%91%E8%9E%8D%E8%AE%A1%E7%AE%97%E8%87%AA%E5%B7%B1%E5%8A%A8%E6%89%8B%E5%B0%81%E8%A3%85-Python-%E6%8E%A5%E5%8F%A3-1/)
+* [《自己动手封装 Python 接口（2）》](https://xuruilong100.github.io/posts/QuantLib-%E9%87%91%E8%9E%8D%E8%AE%A1%E7%AE%97%E8%87%AA%E5%B7%B1%E5%8A%A8%E6%89%8B%E5%B0%81%E8%A3%85-Python-%E6%8E%A5%E5%8F%A3-2/)
+* [《自己动手封装 Python 接口（3）》](https://xuruilong100.github.io/posts/QuantLib-%E9%87%91%E8%9E%8D%E8%AE%A1%E7%AE%97%E8%87%AA%E5%B7%B1%E5%8A%A8%E6%89%8B%E5%B0%81%E8%A3%85-Python-%E6%8E%A5%E5%8F%A3-3/)
