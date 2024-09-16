@@ -16,4 +16,4 @@ description: 《Interest Rate Risk Modeling》第三章知识思维导图
 
 ## 扩展
 
-* [NS 模型的变种](https://xuruilong100.github.io/posts/QuantLib-%E9%87%91%E8%9E%8D%E8%AE%A1%E7%AE%97%E6%94%B6%E7%9B%8A%E7%8E%87%E6%9B%B2%E7%BA%BF%E4%B9%8B%E6%9E%84%E5%BB%BA%E6%9B%B2%E7%BA%BF-5/)
+* [NS 模型的变种](https://xuruilong100.github.io/posts/QuantLib-%E9%87%91%E8%9E%8D%E8%AE%A1%E7%AE%97%E5%88%A9%E7%8E%87%E6%9B%B2%E7%BA%BF%E4%B9%8B%E6%9E%84%E5%BB%BA%E6%9B%B2%E7%BA%BF-5/)

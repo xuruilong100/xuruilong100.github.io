@@ -14,7 +14,7 @@ description: 介绍如何为 QuantLib 封装 Python 接口。
 
 QuantLib 已经开始在 [PyPi](https://pypi.org/project/QuantLib-Python/) 上发布封装好的 Python 接口，安装和使用非常方便，与普通的包别无二致。并且更新及时，保持对应最新版本的 QuantLib。
 
-官方发布的 Python 接口，其优点是**广度**和**全面**，缺点是**深度不足**。有时候用户需要的功能恰好没有被封装（[《利率曲线之构建曲线（3）》](https://xuruilong100.github.io/posts/QuantLib-%E9%87%91%E8%9E%8D%E8%AE%A1%E7%AE%97%E6%94%B6%E7%9B%8A%E7%8E%87%E6%9B%B2%E7%BA%BF%E4%B9%8B%E6%9E%84%E5%BB%BA%E6%9B%B2%E7%BA%BF-3/)一文中曾经提到过），希望重新封装接口，添加自己需要的功能；亦或是用户已经在 C++ 源代码层面上扩展或修复了 QuantLib，希望包装[扩展的新功能](https://github.com/xuruilong100/QuantLibEx)，并与官方的 Python 接口联合使用。
+官方发布的 Python 接口，其优点是**广度**和**全面**，缺点是**深度不足**。有时候用户需要的功能恰好没有被封装（[《利率曲线之构建曲线（3）》](https://xuruilong100.github.io/posts/QuantLib-%E9%87%91%E8%9E%8D%E8%AE%A1%E7%AE%97%E5%88%A9%E7%8E%87%E6%9B%B2%E7%BA%BF%E4%B9%8B%E6%9E%84%E5%BB%BA%E6%9B%B2%E7%BA%BF-3/)一文中曾经提到过），希望重新封装接口，添加自己需要的功能；亦或是用户已经在 C++ 源代码层面上扩展或修复了 QuantLib，希望包装[扩展的新功能](https://github.com/xuruilong100/QuantLibEx)，并与官方的 Python 接口联合使用。
 
 无论是上述哪种情况，都需要用户自己动手封装 Python 接口。
 
