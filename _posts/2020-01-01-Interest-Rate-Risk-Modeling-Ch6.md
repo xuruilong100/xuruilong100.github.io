@@ -182,7 +182,7 @@ $$
 &\frac{1}{CF}
 \sum_{t=0}^{2(T-s-\tau)}\frac{C e^{s \times y(s)}}{e^{(s +\tau + t\times 0.5)\times y(s +\tau + t\times 0.5)}}
 [{s\times \Delta y(s) - (s +\tau + t\times 0.5)\times\Delta y(s +\tau + t\times 0.5)} ] \\
-&+ \frac{F e^{s \times y(s)}}{{T\times y(T)}}\left[{s\times \Delta y(s) - T\times\Delta y(T)} \right]
+&+ \frac{F e^{s \times y(s)}}{T\times y(T)}\left[{s\times \Delta y(s) - T\times\Delta y(T)} \right]
 \end{aligned}
 $$
 
@@ -201,7 +201,7 @@ $$
 \sum_{t=0}^{2(T-s-\tau)}\frac{C e^{s \times y(s)}}{e^{(s +\tau + t\times 0.5)\times y(s +\tau + t\times 0.5)}}
 \times\\
 &\left\{s\times (\Delta A_0 + \Delta A_1 s + \Delta A_2 s^2 + \Delta A_3 s^3 +\cdots) - (s +\tau + t\times 0.5)\times \left[\Delta A_0 + \Delta A_1 (s +\tau + t\times 0.5) + \Delta A_2 (s +\tau + t\times 0.5)^2 + \Delta A_3 (s +\tau + t\times 0.5)^3 +\cdots \right] \right\} \\
-&+\frac{F e^{s \times y(s)}}{{T\times y(T)}}\left[s\times (\Delta A_0 + \Delta A_1 s + \Delta A_2 s^2 + \Delta A_3 s^3+\cdots) - T\times (\Delta A_0 + \Delta A_1 T + \Delta A_2 T^2 + \Delta A_3 T^3+\cdots) \right]
+&+\frac{F e^{s \times y(s)}}{T\times y(T)}\left[s\times (\Delta A_0 + \Delta A_1 s + \Delta A_2 s^2 + \Delta A_3 s^3+\cdots) - T\times (\Delta A_0 + \Delta A_1 T + \Delta A_2 T^2 + \Delta A_3 T^3+\cdots) \right]
 \end{aligned}
 $$
 
