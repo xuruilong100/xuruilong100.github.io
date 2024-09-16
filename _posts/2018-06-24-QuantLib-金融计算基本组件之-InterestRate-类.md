@@ -12,7 +12,7 @@ description: 介绍 QuantLib 基本组件 InterestRate 类的使用。
 
 ## 概述
 
-围绕收益率展开的若干计算（如计算贴现因子）是固定收益分析中最基础的部分。同时，由于固定收益产品在付息频率、计息方式、天数计算规则等细节方面的多样性，这一块的计算显得更加复杂繁琐。QuantLib 将与收益率有关的计算整合封装在 `InterestRate` 类，用户所作的只是按照规定配置特定的参数。
+围绕利率展开的若干计算（如计算贴现因子）是固定收益分析中最基础的部分。同时，由于固定收益产品在付息频率、计息方式、天数计算规则等细节方面的多样性，这一块的计算显得更加复杂繁琐。QuantLib 将与利率有关的计算整合封装在 `InterestRate` 类，用户所作的只是按照规定配置特定的参数。
 
 载入 QuantLib：
 
@@ -38,7 +38,7 @@ InterestRate(r,
 ```
 
 这些变量的类型和解释如下：
-* `r`，浮点数，收益率大小；
+* `r`，浮点数，利率大小；
 * `dc`，`DayCounter` 对象，配置天数计算规则；
 * `comp`，整数，配置计息方式，取值范围是 quantlib-python 的一些预留变量；
 * `freq`，整数，配置付息频率，取值范围是 quantlib-python 的一些预留变量。
@@ -66,7 +66,7 @@ InterestRate(r,
 
 下面是一些常用的成员函数：
 
-* `rate()`：浮点数，返回收益率的值；
+* `rate()`：浮点数，返回利率的值；
 * `dayCounter()`：`DayCounter` 对象，返回控制天数计算规则的成员变量；
 * `compounding()`：整数，返回计息方式；
 * `frequency()`：整数，返回付息频率。
@@ -78,7 +78,7 @@ InterestRate(r,
     * `comp`，整数，配置计息方式，取值范围是 quantlib-python 的一些预留变量；
     * `freq`，整数，配置付息频率，取值范围是 quantlib-python 的一些预留变量。 
 
-某些情况下需要根据付息因子的大小逆算收益率，`InterestRate` 类提供了函数 `impliedRate` 实现这一功能：
+某些情况下需要根据付息因子的大小逆算利率，`InterestRate` 类提供了函数 `impliedRate` 实现这一功能：
 * `impliedRate(compound, resultDC, comp, freq, d1, d2)`：`InterestRate` 对象，返回逆算出的 `InterestRate` 对象，该对象的配置参数包括 `resultDC`、`comp`、`freq`：
     * `d1` 和 `d2` 都是 `Date` 型对象（`d1` < `d2`）
     * `resultDC`，`DayCounter` 对象，配置天数计算规则；

@@ -42,7 +42,7 @@ QuantLib-SWIG 从 1.16 开始修改了智能指针的包装方式，为了和最
 
 ### 估计期限结构参数
 
-把[《收益率曲线之构建曲线（5）》](https://xuruilong100.github.io/posts/QuantLib-%E9%87%91%E8%9E%8D%E8%AE%A1%E7%AE%97%E6%94%B6%E7%9B%8A%E7%8E%87%E6%9B%B2%E7%BA%BF%E4%B9%8B%E6%9E%84%E5%BB%BA%E6%9B%B2%E7%BA%BF-5/)中的 C++ 代码翻译成 Python，验证封装后的接口是否可用。
+把[《利率曲线之构建曲线（5）》](https://xuruilong100.github.io/posts/QuantLib-%E9%87%91%E8%9E%8D%E8%AE%A1%E7%AE%97%E6%94%B6%E7%9B%8A%E7%8E%87%E6%9B%B2%E7%BA%BF%E4%B9%8B%E6%9E%84%E5%BB%BA%E6%9B%B2%E7%BA%BF-5/)中的 C++ 代码翻译成 Python，验证封装后的接口是否可用。
 
 ```python
 import QuantLibEx as qlx
@@ -190,7 +190,7 @@ NelsonSiegel Results: 	[ 0.0500803; -0.0105414; -0.0303842; 0.456529 ]
 Svensson Results: 		[ 0.0431095; -0.00716036; -0.0340932; 0.0391339; 0.228995; 0.117208 ]
 ```
 
-所得结果和[《收益率曲线之构建曲线（5）》](https://xuruilong100.github.io/posts/QuantLib-%E9%87%91%E8%9E%8D%E8%AE%A1%E7%AE%97%E6%94%B6%E7%9B%8A%E7%8E%87%E6%9B%B2%E7%BA%BF%E4%B9%8B%E6%9E%84%E5%BB%BA%E6%9B%B2%E7%BA%BF-5/#%E6%8B%9F%E5%90%88%E7%BB%93%E6%9E%9C)中的完全一致。
+所得结果和[《利率曲线之构建曲线（5）》](https://xuruilong100.github.io/posts/QuantLib-%E9%87%91%E8%9E%8D%E8%AE%A1%E7%AE%97%E6%94%B6%E7%9B%8A%E7%8E%87%E6%9B%B2%E7%BA%BF%E4%B9%8B%E6%9E%84%E5%BB%BA%E6%9B%B2%E7%BA%BF-5/#%E6%8B%9F%E5%90%88%E7%BB%93%E6%9E%9C)中的完全一致。
 
 ![](/img/meme/good.jpg)
 
