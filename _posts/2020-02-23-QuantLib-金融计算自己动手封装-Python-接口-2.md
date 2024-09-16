@@ -12,7 +12,7 @@ description: 介绍如何为 QuantLib 封装 Python 接口。
 
 ## 概述
 
-对于一项简单功能，通常只需要包装少数几个类就可以，正如[《自己动手封装 Python 接口（1）》](https://www.cnblogs.com/xuruilong100/p/12051908.html)演示的那样。
+对于一项简单功能，通常只需要包装少数几个类就可以，正如[《自己动手封装 Python 接口（1）》](https://xuruilong100.github.io/posts/QuantLib-%E9%87%91%E8%9E%8D%E8%AE%A1%E7%AE%97%E8%87%AA%E5%B7%B1%E5%8A%A8%E6%89%8B%E5%B0%81%E8%A3%85-Python-%E6%8E%A5%E5%8F%A3-1/)演示的那样。
 
 下面，将演示如何包装 QuantLib 中的复杂功能，最终实现**从固息债交易数据中估计期限结构模型的参数**。
 

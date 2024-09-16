@@ -12,7 +12,7 @@ description: 介绍如何为 QuantLib 封装 Python 接口。
 
 ## 概述
 
-承接[《自己动手封装 Python 接口（2）》](https://www.cnblogs.com/xuruilong100/p/12350548.html)中留下的问题，即封装 [QuantLibEx](https://github.com/xuruilong100/QuantLibEx) 中的几个期限结构模型。
+承接[《自己动手封装 Python 接口（2）》](https://xuruilong100.github.io/posts/QuantLib-%E9%87%91%E8%9E%8D%E8%AE%A1%E7%AE%97%E8%87%AA%E5%B7%B1%E5%8A%A8%E6%89%8B%E5%B0%81%E8%A3%85-Python-%E6%8E%A5%E5%8F%A3-2/)中留下的问题，即封装 [QuantLibEx](https://github.com/xuruilong100/QuantLibEx) 中的几个期限结构模型。
 
 ## 如何封装源代码？
 
