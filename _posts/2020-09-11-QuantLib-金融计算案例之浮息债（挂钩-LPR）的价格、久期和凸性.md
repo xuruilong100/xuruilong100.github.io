@@ -140,8 +140,10 @@ $$
 因此
 
 $$
-\frac{\mathrm{d}^2 PV}{\mathrm{d}R^2} = \frac{\mathrm{d}^2 PV}{\mathrm{d}y\mathrm{d}R} + \frac{\mathrm{d}\Sigma}{\mathrm{d}R}\\
-\frac{\mathrm{d}^2 PV}{\mathrm{d}R\mathrm{d}y} = \frac{\mathrm{d}^2 PV}{\mathrm{d}y^2} + \frac{\mathrm{d}\Sigma}{\mathrm{d}y}
+\begin{aligned}
+\frac{\mathrm{d}^2 PV}{\mathrm{d}R^2} &= \frac{\mathrm{d}^2 PV}{\mathrm{d}y\mathrm{d}R} + \frac{\mathrm{d}\Sigma}{\mathrm{d}R}\\
+\frac{\mathrm{d}^2 PV}{\mathrm{d}R\mathrm{d}y} &= \frac{\mathrm{d}^2 PV}{\mathrm{d}y^2} + \frac{\mathrm{d}\Sigma}{\mathrm{d}y}
+\end{aligned}
 $$
 
 进而
