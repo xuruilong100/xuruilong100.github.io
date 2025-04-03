@@ -98,5 +98,6 @@ QuantLib 提供 10 种方向数配置，分别是：
 
 ## 参考文献
 
-1. Lo, Chien-Ling, Kenneth J. Palmer, and Min-Teh Yu. "Moment-matching approximations for Asian options." The Journal of Derivatives 21.4 (2014): 103-122.
-2. Sobol', Ilya M., et al. "Construction and comparison of high‐dimensional Sobol'generators." Wilmott 2011.56 (2011): 64-79.
+【1】Lo, Chien-Ling, Kenneth J. Palmer, and Min-Teh Yu. "Moment-matching approximations for Asian options." The Journal of Derivatives 21.4 (2014): 103-122.
+
+【2】Sobol', Ilya M., et al. "Construction and comparison of high‐dimensional Sobol'generators." Wilmott 2011.56 (2011): 64-79.

@@ -41,8 +41,10 @@ $$
 未来 $s$ 年的 $t$ 年期远期利率 $f(s, s+t)$ 和瞬时远期利率 $f(s)$ 之间存在关系：
 
 $$
-f(s,s+t)t = \int_{s}^{s+t}f(x)dx\\
-\Delta f(s,s+t)t = \int_{s}^{s+t}\Delta f(x)dx
+\begin{aligned}
+f(s,s+t)t &= \int_{s}^{s+t}f(x)dx\\
+\Delta f(s,s+t)t &= \int_{s}^{s+t}\Delta f(x)dx
+\end{aligned}
 $$
 
 （连续复利）期货利率 $f^{\ast}$ 和远期利率 $f$ 之间存在“凸性修正”关系：
@@ -60,8 +62,10 @@ $$
 已知：
 
 $$
-CP = 1000000[1-(100-Q)/400]\\
-q=100-Q\\
+\begin{aligned}
+CP &= 1000000[1-(100-Q)/400]\\
+q &= 100-Q\
+\end{aligned}
 $$
 
 那么
@@ -94,8 +98,10 @@ $$
 如果：
 
 $$
-\Delta y(t) = \Delta A_0 + \Delta A_1 t + \Delta A_2 t^2 + \Delta A_3 t^3 + \cdots\\
-\Delta f(t) = \Delta A_0 + 2\Delta A_1 t + 3\Delta A_2 t^2 + 4\Delta A_3 t^3 + \cdots
+\begin{aligned}
+\Delta y(t) &= \Delta A_0 + \Delta A_1 t + \Delta A_2 t^2 + \Delta A_3 t^3 + \cdots\\
+\Delta f(t) &= \Delta A_0 + 2\Delta A_1 t + 3\Delta A_2 t^2 + 4\Delta A_3 t^3 + \cdots
+\end{aligned}
 $$
 
 那么
@@ -113,13 +119,18 @@ $$
 最终
 
 $$
-\frac{\Delta CP}{CP} = -D^f(1)\times \Delta A_0 -D^f(2)\times \Delta A_1 -D^f(3)\times \Delta A_2 + \cdots\\
+\frac{\Delta CP}{CP} = -D^f(1)\times \Delta A_0 -D^f(2)\times \Delta A_1 -D^f(3)\times \Delta A_2 + \cdots
+$$
+
+$$
 \begin{aligned}
 D^f(1) &= K(Q)\times(90/365)\\
 D^f(2) &= K(Q)\times[(s+90/365)^2-s^2]\\
-D^f(3) &= K(Q)\times[(s+90/365)^3-s^3]\\
+D^f(3) &= K(Q)\times[(s+90/365)^3-s^3]
 \end{aligned}
-\\
+$$
+
+$$
 K(Q)=\left(1+\frac{100-Q}{400} \right) / \left(1-\frac{100-Q}{400} \right)=\frac{500-Q}{300+Q}
 $$
 

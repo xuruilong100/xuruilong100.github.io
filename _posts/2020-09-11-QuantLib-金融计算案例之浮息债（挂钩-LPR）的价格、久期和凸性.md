@@ -140,8 +140,10 @@ $$
 因此
 
 $$
-\frac{\mathrm{d}^2 PV}{\mathrm{d}R^2} = \frac{\mathrm{d}^2 PV}{\mathrm{d}y\mathrm{d}R} + \frac{\mathrm{d}\Sigma}{\mathrm{d}R}\\
-\frac{\mathrm{d}^2 PV}{\mathrm{d}R\mathrm{d}y} = \frac{\mathrm{d}^2 PV}{\mathrm{d}y^2} + \frac{\mathrm{d}\Sigma}{\mathrm{d}y}
+\begin{aligned}
+\frac{\mathrm{d}^2 PV}{\mathrm{d}R^2} &= \frac{\mathrm{d}^2 PV}{\mathrm{d}y\mathrm{d}R} + \frac{\mathrm{d}\Sigma}{\mathrm{d}R}\\
+\frac{\mathrm{d}^2 PV}{\mathrm{d}R\mathrm{d}y} &= \frac{\mathrm{d}^2 PV}{\mathrm{d}y^2} + \frac{\mathrm{d}\Sigma}{\mathrm{d}y}
+\end{aligned}
 $$
 
 进而
@@ -482,7 +484,7 @@ class LprBondFunctions(ql.BondFunctions):
 
 用解析公式和数值法分别计算久期和凸性，相互验证。这里依然用到了 `Quote` 类的奇妙特性。
 
-```Python
+```python
 compTab = pt.PrettyTable()
 compTab.add_column(
     '项目',

@@ -1585,7 +1585,7 @@ Use of the `-builtin` option implies a couple of limitations:
 > 使用 `-builtin` 选项意味着两个限制：
 > - python 版本支持：
 >   - 完全支持 2.5 版及更高版本
->   - 主要支持 2.3 和 2.4版本；Director 类和/或在 Python 中包装类型的子类存在问题。
+>   - 主要支持 2.3 和 2.4 版本；Director 类和/或在 Python 中包装类型的子类存在问题。
 >   - 不支持 2.3 之前的版本。
 > - 不再支持某些旧式语法；尤其是：
 >   - 函数接口不再暴露。例如，你可能不再调用 `Whizzo.new_CrunchyFrog()`。相反，你必须使用 `Whizzo.CrunchyFrog()`。
@@ -2132,7 +2132,7 @@ One more point needs to be made about the relationship between director classes 
 >
 > 实际上，“适当的位置”是仅有的两种可能性之一： C++ 或 Python。一旦做出决定，剩下的就很容易了。如果正确的实现在 C++ 中，则显式调用 C++ 继承链中该方法的最低实现。如果正确的实现是在 Python 中执行的，则使用 Python API 调用基础 Python 对象的方法（此后，Python 中通常的虚方法解析会自动找到正确的实现）。
 >
-> 现在，Director 如何决定应使用哪种语言处理方法调用？基本规则是在 Python 中处理该方法，除非有充分的理由不这样做。原因很简单：Python 具有该方法最“扩展”的实现。该断言得到保证，因为至少 Python 代理类实现了该方法。如果所讨论的方法已由派生自代理类的类扩展，则该扩展实现将完全按照应有的方式执行。如果不是，则代理类会将方法调用路由到 C 包装函数中，期望该方法将在 C++ 中解析。包装器将调用 C++ 实例的虚方法，并且由于 Director 对其进行了扩展，因此该调用将最终返回到 Director 方法中。现在出现了“拒绝的充分理由”部分。如果 director 方法再次盲目调用 Python 方法，它将陷入无限循环。我们通过在 C 包装函数中添加特殊代码来避免这种情况，该函数告诉 Director 方法不要执行此操作。C 包装函数会将调用包装函数的 Python 对象的指针与控制器存储的指针进行比较。如果这些相同，则C 包装函数将通知主管通过调用 C++ 继承链来解决方法，从而防止无限循环。
+> 现在，Director 如何决定应使用哪种语言处理方法调用？基本规则是在 Python 中处理该方法，除非有充分的理由不这样做。原因很简单：Python 具有该方法最“扩展”的实现。该断言得到保证，因为至少 Python 代理类实现了该方法。如果所讨论的方法已由派生自代理类的类扩展，则该扩展实现将完全按照应有的方式执行。如果不是，则代理类会将方法调用路由到 C 包装函数中，期望该方法将在 C++ 中解析。包装器将调用 C++ 实例的虚方法，并且由于 Director 对其进行了扩展，因此该调用将最终返回到 Director 方法中。现在出现了“拒绝的充分理由”部分。如果 director 方法再次盲目调用 Python 方法，它将陷入无限循环。我们通过在 C 包装函数中添加特殊代码来避免这种情况，该函数告诉 Director 方法不要执行此操作。C 包装函数会将调用包装函数的 Python 对象的指针与控制器存储的指针进行比较。如果这些相同，则 C 包装函数将通知主管通过调用 C++ 继承链来解决方法，从而防止无限循环。
 >
 > 关于 Director 类和代理类之间的关系，还需要指出一点。在 Python 中创建代理类实例时，SWIG 将创建原始 C++ 类的实例并将其分配给 `.this`。这就是没有 Director 的情况，即使针对特定类别启用了 Director，也是如此。但是，当从代理类*派生*一个类时，SWIG 随后将创建相应的 C++ Director 类的实例。造成这种差异的原因是，用户定义的子类可能会覆盖或扩展原始类的方法，因此需要 Director 类将调用正确路由到这些方法。对于未修改的代理类，所有方法最终都用 C++ 实现，因此不需要通过 Python 路由调用而涉及额外的开销。
 
@@ -2207,7 +2207,7 @@ It may be the case that a method call originates in Python, travels up to C++ th
 
 The class SWIG::DirectorException used in this example is actually a base class of SWIG::DirectorMethodException, so it will trap this exception. Because the Python error state is still set when SWIG::DirectorMethodException is thrown, Python will register the exception as soon as the C wrapper function returns.
 
-> 本示例中使用的 `SWIG::DirectorException` 类实际上是 `SWIG::DirectorMethodException` 的基类，因此它将捕获此异常。由于抛出 `SWIG::DirectorMethodException` 时仍设置 Python 错误状态，因此 C 包装函数返回后，Python将立即注册异常。
+> 本示例中使用的 `SWIG::DirectorException` 类实际上是 `SWIG::DirectorMethodException` 的基类，因此它将捕获此异常。由于抛出 `SWIG::DirectorMethodException` 时仍设置 Python 错误状态，因此 C 包装函数返回后，Python 将立即注册异常。
 
 ### 36.5.5 开销与代码膨胀
 
@@ -2994,7 +2994,7 @@ The `%array_class(type, name)` macro creates wrappers for an unbounded array obj
 
 The array "object" created by `%array_class()` does not encapsulate pointers inside a special array object. In fact, there is no bounds checking or safety of any kind (just like in C). Because of this, the arrays created by this library are extremely low-level indeed. You can't iterate over them nor can you even query their length. In fact, any valid memory address can be accessed if you want (negative indices, indices beyond the end of the array, etc.). Needless to say, this approach is not going to suit all applications. On the other hand, this low-level approach is extremely efficient and well suited for applications in which you need to create buffers, package binary data, etc.
 
-> 由 `%array_class()` 创建的数组“对象”没有将指针封装在特殊的数组对象中。实际上，没有边界检查或任何类型的安全性（就像C中一样）。因此，此库创建的数组确实是非常低级的。你无法遍历它们，甚至无法查询它们的长度。实际上，如果需要，可以访问任何有效的内存地址（负索引，超出数组末尾的索引等）。不用说，这种方法并不适合所有应用程序。另一方面，这种低级方法非常高效，非常适合需要创建缓冲区，打包二进制数据等的应用程序。
+> 由 `%array_class()` 创建的数组“对象”没有将指针封装在特殊的数组对象中。实际上，没有边界检查或任何类型的安全性（就像 C 中一样）。因此，此库创建的数组确实是非常低级的。你无法遍历它们，甚至无法查询它们的长度。实际上，如果需要，可以访问任何有效的内存地址（负索引，超出数组末尾的索引等）。不用说，这种方法并不适合所有应用程序。另一方面，这种低级方法非常高效，非常适合需要创建缓冲区，打包二进制数据等的应用程序。
 
 ### 36.7.4 处理字符串
 
@@ -4375,7 +4375,7 @@ Finally suppose that your pure python code is stored in a .zip file or some othe
 
 Contents of foo.zip
 
-> 最后，假设你的纯 Python 代码存储在 `.zip` 文件中或其他某种方式（数据库，Web服务连接等）中。Python 可以使用自定义导入器加载 `robin.py` 模块。但是 `_robin.so` 模块将需要位于文件系统上。隐式命名空间包使这成为可能。例如，使用 `PYTHONPATH="/some/path/foo.zip:/some/other/path"`
+> 最后，假设你的纯 Python 代码存储在 `.zip` 文件中或其他某种方式（数据库，Web 服务连接等）中。Python 可以使用自定义导入器加载 `robin.py` 模块。但是 `_robin.so` 模块将需要位于文件系统上。隐式命名空间包使这成为可能。例如，使用 `PYTHONPATH="/some/path/foo.zip:/some/other/path"`
 >
 > `foo.zip` 的内容
 

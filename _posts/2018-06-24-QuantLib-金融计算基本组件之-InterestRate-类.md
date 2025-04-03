@@ -85,7 +85,7 @@ InterestRate(r,
     * `comp`，整数，配置计息方式，取值范围是 quantlib-python 的一些预留变量；
     * `freq`，整数，配置付息频率，取值范围是 quantlib-python 的一些预留变量。 
 
-例子1：
+例子 1：
 
 ```python
 def InterestRate1():
